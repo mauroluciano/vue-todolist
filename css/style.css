@@ -7,11 +7,11 @@
   list-style: none;
 }
 
-i {
-  color: black;
-}
-
 .green {
   text-decoration-line: line-through;
   color: green;
+}
+
+.trash {
+  float: right;
 }

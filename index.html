@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- FONT AWESOME -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
 
     <!-- BOOTSTRAP -->
     <link
@@ -23,14 +31,16 @@
   </head>
   <body>
     <div id="app">
-      <div class="container mt-4 bg-primary">
-        <div class="container-fluid p-3">
+      <div class="container-sm mt-4 bg-primary">
+        <div class="p-3">
           <h1 class="text-center">{{ titleToDo }}</h1>
           <div>
             <ul class="list p-2">
               <li class="element mt-3 p-2 bg-white" v-for="text in myList">
                 <span :class="text.done?'green':''">{{ text.text }}</span>
-                <i class="fas fa-trash"></i>
+                <span class="trash text-danger"
+                  ><i class="fas fa-trash"></i
+                ></span>
               </li>
             </ul>
           </div>
