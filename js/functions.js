@@ -13,4 +13,10 @@ createApp({
       ],
     };
   },
+
+  methods: {
+    deleteToDo(index) {
+      this.myList.splice(index, 1);
+    },
+  },
 }).mount("#app");

@@ -36,10 +36,12 @@
           <h1 class="text-center">{{ titleToDo }}</h1>
           <div>
             <ul class="list p-2">
-              <li class="element mt-3 p-2 bg-white" v-for="text in myList">
+              <li
+                class="element mt-3 p-2 bg-white"
+                v-for="(text, index) in myList">
                 <span :class="text.done?'green':''">{{ text.text }}</span>
                 <span class="trash text-danger"
-                  ><i class="fas fa-trash"></i
+                  ><i class="fas fa-trash" @click="deleteToDo(index)"></i
                 ></span>
               </li>
             </ul>
