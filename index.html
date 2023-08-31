@@ -23,13 +23,14 @@
   </head>
   <body>
     <div id="app">
-      <div class="container mt-4 bg-primary text-center">
+      <div class="container mt-4 bg-primary">
         <div class="container-fluid p-3">
-          <h1>{{ titleToDo }}</h1>
+          <h1 class="text-center">{{ titleToDo }}</h1>
           <div>
             <ul class="list p-2">
-              <li class="element mt-3 p-2 bg-white" v-for="element in myList">
-                {{ element }}
+              <li class="element mt-3 p-2 bg-white" v-for="text in myList">
+                <span :class="text.done?'green':''">{{ text.text }}</span>
+                <i class="fas fa-trash"></i>
               </li>
             </ul>
           </div>

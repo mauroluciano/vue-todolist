@@ -3,12 +3,15 @@
   margin: 0;
 }
 
-body {
-}
-
 .list {
   list-style: none;
 }
 
-.element {
+i {
+  color: black;
+}
+
+.green {
+  text-decoration-line: line-through;
+  color: green;
 }
