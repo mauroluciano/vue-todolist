@@ -27,8 +27,10 @@
         <div class="container-fluid p-3">
           <h1>{{ titleToDo }}</h1>
           <div>
-            <ul>
-              <li v-for="element in myList">{{ element }}</li>
+            <ul class="list p-2">
+              <li class="element mt-3 p-2 bg-white" v-for="element in myList">
+                {{ element }}
+              </li>
             </ul>
           </div>
         </div>
