@@ -13,7 +13,7 @@ createApp({
       ],
     };
   },
-
+  //metodo per far funzionare il delete/cestino
   methods: {
     deleteToDo(index) {
       this.myList.splice(index, 1);

@@ -46,8 +46,9 @@
                 class="element mt-3 p-2 bg-white"
                 v-for="(text, index) in myList">
                 <span :class="text.done?'green':''">{{ text.text }}</span>
-                <span class="trash text-danger"
-                  ><i class="fas fa-trash" @click="deleteToDo(index)"></i
+                <span class="trash text-danger">
+                  <!-- metodo per far funzionare il delete/cestino -->
+                  <i class="fas fa-trash" @click="deleteToDo(index)"></i
                 ></span>
               </li>
             </ul>
